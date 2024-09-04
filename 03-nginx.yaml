@@ -1,5 +1,6 @@
 - name: install ngingx
   hosts: web
+  become: yes #sudo access
   tasks:
     - name: install nginx
       ansible.builtin.package: #heterogenous module that can work for all distors
