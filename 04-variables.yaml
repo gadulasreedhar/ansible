@@ -8,4 +8,4 @@
     - name: print the information
       ansible.builtin.debug:
         #msg: "Hi, i am learing DevOps with AWS,Duration is 120 hrs,Trainer is SKR"
-        msg: "Hi, i am learing {{COURSE}},Duration is {{120 hrs}},Trainer is {{SKR}}"
+        msg: "Hi, i am learing {{COURSE}},Duration is {{Duration}},Trainer is {{Trainer}}"
