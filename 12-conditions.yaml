@@ -3,7 +3,7 @@
   connection: local
   vars_prompt:
   - name: number
-    number: please enter a number
+    prompt: please enter the number
     private: false
   
   tasks:
