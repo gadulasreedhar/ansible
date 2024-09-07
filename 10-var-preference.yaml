@@ -4,7 +4,10 @@
     COURSE: "DevOps with AWS from play level"
     Duration: "120 hrs"
     Trainer: "SKR"
-
+  vars_prompt:
+  - name: COURSE
+    prompt: Please enter the course information
+    private: false
   tasks:
    - name: print the information
      vars:
