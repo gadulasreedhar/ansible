@@ -7,6 +7,7 @@
       prompt: please enter the course duration
     - name: Trainer
       prompt: please enter the trainer name
+      private: false
     tasks:
       - name: 
         ansible.builtin.debug:
