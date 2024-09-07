@@ -11,7 +11,12 @@
       prompt: please enter the trainer name
       private: false
     tasks:
-      - name: 
-        ansible.builtin.debug:
-          msg: "I am learning {{COURSE}} with duration of {{Duration}} and trainer is {{Trainer}}"
+     - name: print the information again
+       vars: # Task level variables
+        COURSE: ANSIBLE
+       ansible.builtin.debug:
+        msg: "Hi,I am learning {{COURSE}} task level"
+     - name: 
+       ansible.builtin.debug:
+        msg: "I am learning {{COURSE}}"
      
