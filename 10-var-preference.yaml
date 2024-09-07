@@ -7,17 +7,17 @@
   vars_prompt:
     - name: COURSE
       prompt: please enter the course name
-    - name: Duration
-      prompt: please enter the course duration
-    - name: Trainer
-      prompt: please enter the trainer name
-      private: false
+    # - name: Duration
+    #   prompt: please enter the course duration
+    # - name: Trainer
+    #   prompt: please enter the trainer name
+    #   private: false
   tasks:
-  - name: print the information
-    vars:
+   - name: print the information
+     vars:
       COURSE: "DevOps with AWS from tasklevel"
       Duration: "120 hrs"
       Trainer: "SKR"
-    ansible.builtin.debug:
+     ansible.builtin.debug:
         #msg: "Hi, i am learing DevOps with AWS,Duration is 120 hrs,Trainer is SKR"
-        msg: "Hi, i am learing {{COURSE}},Duration is {{Duration}},Trainer is {{Trainer}}"
+        msg: "Hi, i am learing {{COURSE}}"
