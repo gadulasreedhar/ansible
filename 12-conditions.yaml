@@ -11,4 +11,7 @@
       msg: "Enter number {{ my_number }} is less  than 10"
     when: my_number | int < 10
     
-    #when: {{ number }} < 10 #conditional expression
+  - name: print the number if greater than 10
+    ansible.builtin.debug:
+      msg: "Enter number {{ my_number }} is greater than 10"
+    when: my_number | int > 10
