@@ -1,5 +1,5 @@
 - name: check a number less than 10 or not
-  hostS: local
+  hosts: local
   connection: local
   vars_prompt:
   - name: number
