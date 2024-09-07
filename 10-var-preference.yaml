@@ -10,8 +10,8 @@
       private: false
     - name: Duration
       prompt: please enter the course duration
-    - name: Trainer
       private: false
+    - name: Trainer
       prompt: please enter the trainer name
       private: false
   tasks:
