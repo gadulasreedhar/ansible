@@ -27,7 +27,7 @@
       vars:
         numbers: [1,2,3,6,3]
       ansible.builtin.debug:
-        msg: "{{  numbers | max , numbers | min }}"
+        msg: " Max: {{  numbers | max }}, Min: {{ numbers | min }} "
 
     - name: Dictionary to items
       vars:
@@ -37,3 +37,14 @@
           TRAINER: "SKR"
       ansible.builtin.debug:
         msg: "{{ COURSE | dict2items }}"
+
+    - name: Items to dictionary
+      vars:
+        COURSE:
+        - { "key": "NAME","value": "AWS" }
+        - { "key": "DURATION", "value": "120HR" }
+        - { "key": "TRAINER", "value": "SKR" }
+      ansible.builtin.debug:
+        msg: "{{ COURSE | items2dict }}"
+        
+
