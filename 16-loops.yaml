@@ -1,5 +1,5 @@
 - name: loops demo
-  host: local
+  hosts: local
   connection: local
   tasks:
    - name: print items in loop
