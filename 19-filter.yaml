@@ -28,3 +28,12 @@
         numbers: [1,2,3,6,3]
       ansible.builtin.debug:
         msg: "{{  numbers | max , numbers | min }}"
+
+    - name: Dictionary to items
+      vars:
+        COURSE:
+          NAME: "AWS"
+          DURATION: "120HR"
+          TRAINER: "SKR"
+      ansible.builtin.debug:
+        msg: "{{ COURSE | dict2item }}"
