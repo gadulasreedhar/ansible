@@ -36,4 +36,4 @@
           DURATION: "120HR"
           TRAINER: "SKR"
       ansible.builtin.debug:
-        msg: "{{ COURSE | dict2item }}"
+        msg: "{{ COURSE | dict2items }}"
